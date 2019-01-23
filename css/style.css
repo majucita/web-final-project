@@ -1,5 +1,96 @@
 /* CSS Document */
 /*==================================================
+Common
+==================================================*/
+body {
+  background: #4c4c4c;
+}
+
+#container {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border: solid 1px red;
+}
+
+/*TextLink
+--------------------*/
+header {
+  width: 100%;
+  background: #595959;
+}
+
+header h1 img {
+  display: block;
+  margin: 0 auto;
+}
+
+nav ul.main-menu-list {
+  width: 100%;
+  border: solid 1px blue;
+}
+
+nav ul.main-menu-list li {
+  display: inline-block;
+  width: 23%;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav ul.main-menu-sub-list {
+  width: 100%;
+}
+
+nav ul.main-menu-sub-list li {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #5f5f5f;
+  min-width: 23%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#banner {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background: #595959;
+}
+
+footer #copyright {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/*==================================================
 Top
 ==================================================*/
 /*==================================================
