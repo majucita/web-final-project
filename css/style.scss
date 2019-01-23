@@ -113,8 +113,20 @@ img{
 h2{
 	@include subTitle;
 }
-main{
+/*
+@font-face {
+	font-family: ;
+	src: url(.eot);
 }
+@font-face {
+	font-family: ;
+	src: url(.ttf) format("truetype");
+}
+@font-face {
+	font-family: ;
+	 src: url(.otf) format("opentype");
+}
+*/
 /*==================================================
 Top
 ==================================================*/
@@ -214,14 +226,58 @@ Event
 /*==================================================
 Menu
 ==================================================*/
+#menu{
+	width: $innerWidth;
+	margin: 0 auto;
+	.menu-wrap{
+		display: flex;
+		justify-content: center;
+		.menu-wrap-item{
+			width: 46%;
+			margin: 0 20px;
+		}
+		.menu-label{
+			margin: 0 0 20px;
+			border-bottom: solid 1px #ffffff;
+			text-align: center;
+			font-weight: bold;
+		}
+		dl.menu-list{
+			dt{
+				margin: 30px 0 0;
+				font-weight: 800;
+			}
+		}
+	}
+}
 
 
 /*==================================================
 Contact
 ==================================================*/
-
-
-
+#contact{
+	.contact-wrap{
+		width: $innerWidth;
+		margin: 0 auto;
+		h3{
+			margin: 0 0 4px;
+			border-bottom: solid 1px #ffffff;
+		}
+		dl{
+			margin: 0 0 30px;
+			dt{
+				float: left;
+				width: 180px;
+			}
+			dd{
+			}
+		}
+		iframe{
+			margin: 40px 0 0;
+			width: 100%;
+		}
+	}
+}
 /*==================================================
 Responsive
 ==================================================*/
