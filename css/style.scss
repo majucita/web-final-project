@@ -67,29 +67,6 @@ nav{
 			@include boxSizing;
 		}
 	}
-	ul.main-menu-sub-list{
-		width: 100%;
-		li{
-			display: block;
-			width: 100%;
-			padding: 10px;
-		}
-	}
-	.dropdown {
-		position: relative;
-		display: inline-block;
-	}
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: #5f5f5f;
-		min-width: 23%;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1;
-	}
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
 }
 
 #banner{
