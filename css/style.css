@@ -3,25 +3,39 @@
 Common
 ==================================================*/
 body {
-  background: #4c4c4c;
+  background: #101010;
 }
 
 #container {
   display: block;
   width: 80%;
   margin: 0 auto;
-  border: solid 1px red;
+  color: #ffffff;
+  line-height: 1.6;
+  background: #595959;
 }
 
 /*TextLink
 --------------------*/
 a:link {
+  color: #ffffff;
   text-decoration: none;
+}
+
+a:active {
+  color: #ffffff;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+a:visited {
+  color: #ffffff;
 }
 
 header {
   width: 100%;
-  background: #595959;
 }
 
 header h1 img {
@@ -31,7 +45,6 @@ header h1 img {
 
 nav ul.main-menu-list {
   width: 100%;
-  border: solid 1px blue;
 }
 
 nav ul.main-menu-list li {
@@ -80,6 +93,7 @@ nav .dropdown:hover .dropdown-content {
 
 footer {
   width: 100%;
+  margin: 40px auto 0;
   padding: 20px 0;
   background: #595959;
 }
@@ -94,9 +108,116 @@ img {
   height: auto;
 }
 
+h2 {
+  margin: 40px 0;
+  text-align: center;
+  font-size: 32px;
+}
+
 /*==================================================
 Top
 ==================================================*/
+#top .about {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#top .about .about-wrap {
+  display: flex;
+  justify-content: center;
+  vertical-align: top;
+}
+
+#top .about .about-wrap .about-wrap-video {
+  width: 50%;
+}
+
+#top .about .about-wrap .about-wrap-video video {
+  height: 250px;
+  background: #fff;
+}
+
+#top .about .about-wrap .about-wrap-text {
+  width: 50%;
+}
+
+#top .gallery {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#top .gallery ul {
+  margin: 0 auto;
+}
+
+#top .gallery ul li {
+  display: inline-block;
+  width: 15.25%;
+  margin: 0 4px;
+}
+
+#top .gallery ul li .thum {
+  width: 100%;
+  height: 120px;
+  border: solid 4px #ffffff;
+  object-fit: cover;
+}
+
+#top .gallery ul li .lightbox-target {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  overflow: hidden;
+  z-index: 300;
+}
+
+#top .gallery ul li .lightbox-target .container {
+  margin: auto;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  transition: 0.5s ease-in-out;
+  text-align: left;
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#top .gallery ul li .lightbox-target .container img {
+  max-height: 500px;
+  border: solid 4px #ffffff;
+}
+
+#top .gallery ul li a.lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 400;
+  color: #ffffff;
+  font-size: 30px;
+  text-shadow: 1px 0px 0px #7b7b7b;
+}
+
+#top .gallery ul li .lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+
+#top .gallery ul li .lightbox-target:target img {
+  vertical-align: top;
+}
+
 /*==================================================
 Event
 ==================================================*/
