@@ -15,6 +15,10 @@ body {
 
 /*TextLink
 --------------------*/
+a:link {
+  text-decoration: none;
+}
+
 header {
   width: 100%;
   background: #595959;
