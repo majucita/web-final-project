@@ -1,7 +1,15 @@
 # CICCC Web FInal Project
 
 ## Description
-Here is we recreated not looks good webpage to improve awesome coding in project in our school.The term is one week. our task splatted each person.Koji was manager instruct tasks to our group and created 2html which are Top and Event.Maju made 2 html which are Menu and Contact.Jesse deal with to create design and framework.Ryota helped me as assistant like submanager.
+Here is we recreated not looks good webpage to improve awesome coding in project in our school.The term is one week. our task splatted each person.Koji was manager instruct tasks to our group and created 2html which are Top and Event.Maju made 2 html which are Menu and Contact.Jesse deal with to create design and framework.Ryota helped me as assistant like submanager.   
+
+[https://rinda12988.github.io/web-final-project/](https://rinda12988.github.io/web-final-project/)
+
+## Skill
+- HTML
+- CSS
+- Sass
+- Photoshop
 
 ## Author
 - [Koji](https://github.com/rinda12988)
