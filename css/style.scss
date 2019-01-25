@@ -1,0 +1,386 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@mixin boxSizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@mixin subTitle{
+	margin: 40px 0;
+	text-align: center;
+	font-size: 32px;
+}
+
+$dummyColor: #595959;
+$innerWidth: 90%;
+
+/*==================================================
+Common
+==================================================*/
+body{
+	background: #101010;
+font-family: 'Oranienbaum', serif;
+
+}
+#container{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	color: #ffffff;
+	line-height: 1.6;
+	background: $dummyColor;
+}
+/*TextLink
+--------------------*/
+a:link{
+	color: #ffffff;
+	text-decoration: none;
+}
+a:active{
+	color: #ffffff;
+}
+a:hover{
+	opacity: 0.7;
+}
+a:visited{
+	color: #ffffff;
+}
+
+header{
+	width: 100%;
+	background: #2f2f2f;
+	h1{
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+nav{
+	background: $dummyColor;
+	ul.main-menu-list{
+		width: 100%;
+		text-align: center;
+		border-top: 3px solid #f4f4f4;
+		li{
+			display: inline-block;
+			width: 23%;
+			font-size: 18px;
+			a{
+				display: block;
+				padding: 14px 0;
+				text-align:center;
+				cursor: pointer;
+				@include boxSizing;
+				&:hover{
+					color: #00053f;
+				}
+			}
+		}
+	}
+}
+#banner{
+	width: 100%;
+}
+
+footer{
+	width: 100%;
+	margin: 40px auto 0;
+	padding: 20px 0;
+	background: #2f2f2f;
+	#copyright{
+		text-align: center;
+	}
+}
+img{
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+h2{
+	@include subTitle;
+}
+h3{
+	font-size: 30px;
+}
+/*
+@font-face {
+	font-family: ;
+	src: url(.eot);
+}
+@font-face {
+	font-family: ;
+	src: url(.ttf) format("truetype");
+}
+@font-face {
+	font-family: ;
+	 src: url(.otf) format("opentype");
+}
+*/
+/*==================================================
+Top
+==================================================*/
+#top{
+	h2{
+		border-bottom: solid 1px #ffffff;
+	}
+	.about{
+		width: $innerWidth;
+		margin: 0 auto;
+		.about-wrap{
+			display: flex;
+			justify-content: center;
+			vertical-align: top;
+			.about-wrap-video{
+				width: 44%;
+				video{
+					width: 90%;
+					height: 250px;
+					background: #fff;
+				}
+			}
+			.about-wrap-text{
+				width: 44%;
+			}
+		}
+	}
+	.gallery{
+		width: $innerWidth;
+		margin: 0 auto;
+		text-align: center;
+		ul{
+			margin: 0 auto;
+			li{
+				display: inline-block;
+				width:  15.25%;
+				margin: 0 4px;
+				.thum{
+					width: 100%;
+					height: 120px;
+					border: solid 4px #ffffff;
+					object-fit: cover;
+				}
+				.lightbox-target {
+					position: fixed;
+					top: 0px;
+					left: 0px;
+					width: 100%;
+					background: rgba(0, 0, 0, 0.7);
+					width: 100%;
+					opacity: 0;
+					transition: opacity 0.5s ease-in-out;
+					overflow: hidden;
+					z-index: 300;
+				}
+				.lightbox-target .container {
+					margin: auto;
+					position: absolute;
+					top: 50vh;
+					left: 50vw;
+					background-color: white;
+					box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+					transition: 0.5s ease-in-out;
+					text-align: left;
+					transform: translate3d(-50%, -50%, 0);
+					@include boxSizing;
+					img{
+						max-height: 500px;
+						border: solid 4px #ffffff;
+					}
+				}
+				a.lightbox-close{
+					position: absolute;
+					top: 10px;
+					right: 20px;
+					z-index: 400;
+					color: #ffffff;
+					font-size: 30px;
+					text-shadow: 1px 0px 0px #7b7b7b;
+				}
+
+				.lightbox-target:target {
+					opacity: 1;
+					top: 0;
+					bottom: 0;
+				}
+
+				.lightbox-target:target img {
+					vertical-align: top;
+				}
+			}
+		}
+	}
+}
+/*==================================================
+Event
+==================================================*/
+#event{
+	h3{
+		margin: 40px 0;
+		text-align: center;
+		border-bottom: solid 1px #ffffff;
+	}
+	.the-titile-away{
+			width: $innerWidth;
+			margin: 0 auto;
+		.the-title-away-wrap-text{
+			margin: 0 0 30px;
+			text-align: center;
+		}
+		.the-title-away-wrap-picture{
+			margin: 0 auto 70px;
+			ul{
+				text-align: center;
+				li{
+					display: inline-block;
+					width: 30%;
+					margin: 0 10px;
+					vertical-align: top;
+					img{
+						width: 100%;
+						height: 250px;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+		.rent-text{
+			text-align: center;
+		}
+	}
+}
+/*==================================================
+Menu
+==================================================*/
+#menu{
+	width: $innerWidth;
+	margin: 0 auto;
+	.menu-wrap{
+		display: flex;
+		justify-content: center;
+		.menu-wrap-item{
+			width: 46%;
+			margin: 0 20px;
+			text-align: center;
+		}
+		h3{
+			margin: 0 0 20px;
+			border-bottom: solid 1px #ffffff;
+			font-weight: bold;
+		}
+		dl.menu-list{
+			dt{
+				margin: 30px 0 0;
+				font-weight: 800;
+			}
+		}
+	}
+}
+/*==================================================
+Contact
+==================================================*/
+#contact{
+	.contact-wrap{
+		h3{
+			margin: 0 0 4px;
+			border-bottom: solid 1px #ffffff;
+		}
+		.contact-list-content-item{
+			width: 50%;
+			margin: 0 auto;
+			text-align: center;
+			dl{
+				dt{
+					font-weight: 800;
+				}
+				dd{
+					margin: 0 0 30px;
+				}
+			}
+		}
+		iframe{
+			margin: 40px 0 -50px;
+			width: 100%;
+		}
+	}
+}
+/*==================================================
+Responsive
+==================================================*/
+@media screen and (max-width: 980px){
+	nav{
+		ul.main-menu-list{
+			border-top: solid 1px #ffffff;
+			li{
+				display: block;
+				width: 100%;
+				border-bottom: solid 1px #ffffff;
+			}
+		}
+	}
+	#top{
+		.about{
+			.about-wrap{
+				display: block;
+				.about-wrap-video{
+					width: 100%;
+					video{
+						clear: both;
+						width: 100%;
+						margin: 0 0 20px;
+					}
+				}
+				.about-wrap-text{
+					clear: both;
+					width: 100%;
+				}
+			}
+		}
+		.gallery{
+			ul{
+				text-align: center;
+				li{
+					display: block;
+					width:  100%;
+					margin: 0 4px;
+					a.lightbox-close{
+						top: 5px;
+						right: 5px;
+					}
+				}
+			}
+		}
+	}
+	#event{
+		.the-titile-away{
+			.the-title-away-wrap-picture{
+				ul{
+
+					li{
+						display: block;
+						width: 100%;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+	#menu{
+		.menu-wrap{
+			display: block;
+			.menu-wrap-item{
+				width: 100%;
+				margin: 0 auto 46px;
+			}
+		}
+	}
+	#contact{
+		.contact-wrap{
+			.contact-list-content-item{
+				width: 70%;
+			}
+		}
+	}
+}
