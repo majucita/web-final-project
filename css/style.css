@@ -4,6 +4,7 @@ Common
 ==================================================*/
 body {
   background: #101010;
+  font-family: 'Oranienbaum', serif;
 }
 
 #container {
@@ -36,7 +37,7 @@ a:visited {
 
 header {
   width: 100%;
-  background: #191919;
+  background: #2f2f2f;
 }
 
 header h1 img {
@@ -57,6 +58,7 @@ nav ul.main-menu-list {
 nav ul.main-menu-list li {
   display: inline-block;
   width: 23%;
+  font-size: 18px;
 }
 
 nav ul.main-menu-list li a {
@@ -82,7 +84,7 @@ footer {
   width: 100%;
   margin: 40px auto 0;
   padding: 20px 0;
-  background: #191919;
+  background: #2f2f2f;
 }
 
 footer #copyright {
@@ -99,6 +101,10 @@ h2 {
   margin: 40px 0;
   text-align: center;
   font-size: 32px;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 /*
@@ -118,6 +124,10 @@ h2 {
 /*==================================================
 Top
 ==================================================*/
+#top h2 {
+  border-bottom: solid 1px #ffffff;
+}
+
 #top .about {
   width: 90%;
   margin: 0 auto;
@@ -227,7 +237,6 @@ Event
   margin: 40px 0;
   text-align: center;
   border-bottom: solid 1px #ffffff;
-  font-size: 22px;
 }
 
 #event .the-titile-away {
@@ -301,7 +310,6 @@ Contact
 #contact .contact-wrap h3 {
   margin: 0 0 4px;
   border-bottom: solid 1px #ffffff;
-  font-size: 22px;
 }
 
 #contact .contact-wrap .contact-list-content-item {
