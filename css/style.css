@@ -366,6 +366,10 @@ Responsive
     width: 100%;
     margin: 0 4px;
   }
+  #top .gallery ul li a.lightbox-close {
+    top: 5px;
+    right: 5px;
+  }
   #event .the-titile-away .the-title-away-wrap-picture ul li {
     display: block;
     width: 100%;

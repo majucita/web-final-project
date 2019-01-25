@@ -345,6 +345,10 @@ Responsive
 					display: block;
 					width:  100%;
 					margin: 0 4px;
+					a.lightbox-close{
+						top: 5px;
+						right: 5px;
+					}
 				}
 			}
 		}
